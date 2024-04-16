@@ -70,4 +70,4 @@ management:
 
 authuser:
   refreshscope:
-    name: "Another Name"
+    name: "Name"
