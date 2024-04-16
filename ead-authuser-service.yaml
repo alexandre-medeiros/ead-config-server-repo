@@ -61,12 +61,10 @@ resilience4j:
           - org.springframework.web.client.ResourceAccessException
 
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
-        include:
-          - refresh
-          - health
+        include: "*"
 
 authuser:
   refreshscope:
