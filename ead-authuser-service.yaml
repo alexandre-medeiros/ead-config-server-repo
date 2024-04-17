@@ -68,4 +68,4 @@ management:
 
 authuser:
   refreshscope:
-    name: "Name"
+    name: "Name UPDATED"
