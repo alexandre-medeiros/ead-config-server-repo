@@ -1,0 +1,44 @@
+server:
+  port: 8082
+  servlet:
+    context-path: '/ead-course/'
+
+spring:
+  application:
+    name: ead-course-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: password
+  datasource:
+    url: jdbc:postgresql://localhost:5435/ead-course
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  output:
+    ansi:
+      enabled: ALWAYS
+
+ead:
+  api:
+    url:
+      authuser: 'http://ead-authuser-service/ead-authuser'
+  broker:
+    exchange:
+      userEventExchange: ead.userevent
+    queue:
+      userEventQueue:
+        name: ead.userevent.ms.course
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
