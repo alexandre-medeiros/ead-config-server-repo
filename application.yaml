@@ -6,9 +6,14 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: "http://localhost:8761/eureka"
+      defaultZone: "http://${ead.serviceRegistry.username}:${ead.serviceRegistry.password}@localhost:8761/eureka"
   instance:
     hostname: localhost
+
+ead:
+  serviceRegistry:
+    username: admin
+    password: admin
 #
 # Used if you want to control the exact format of response no more fields no less fields
 #  jackson:
