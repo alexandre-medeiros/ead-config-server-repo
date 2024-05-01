@@ -3,6 +3,14 @@ spring:
     ansi:
       enabled: ALWAYS
 
+ead:
+  serviceRegistry:
+    username: admin
+    password: admin
+  auth:
+    jwtSecret: es40-uMA7kWaEVy/jMyokzWY5ig59LTFnCYrCn99dssCww=N8sF5ko53dKyzOjDMOSApIR/bodumoHBBuHXs3xNE4UpzRA83rt39caBSZoGS?j1rc/1PZWCY1TlP89rR0aL2=ufcARUtfq81fffZcYLt600r0FD!bcg6NgXR-2olXFUlQ4WUmHDCQPd=7m=-4K9!EOSZPlWzwdWdxMCh/cbOn8qnxg3Fspgj88XGmciOKC?5OHpwx7Zs6yb?T8NbONSMyYtPeLgABb6jYNPl=ExjT7!MGHAIn1r3T=-aAKgCPQoy1WK=0yL-yNLbsGS!UrA8jKa7iYpjOzxWPmSVZ4cm4Ght//dju12sy8xsvXlwg7bw0YoRrCp65KKEFR84zye8XGYoTZW5tQYvbkPZGbD/kI4nl2?PPt2nlQLpBGBBYdrtR4JsVmmS21?dDKQHCU-c0hR97NV8vngbMkzB4tKs2WdCc0k?uLnV5u3sRn2UYrbS4od9M63W7Au6d/45
+    jwtExpirationMs: 60*60*4
+
 eureka:
   client:
     serviceUrl:
@@ -10,10 +18,7 @@ eureka:
   instance:
     hostname: localhost
 
-ead:
-  serviceRegistry:
-    username: admin
-    password: admin
+
 #
 # Used if you want to control the exact format of response no more fields no less fields
 #  jackson:

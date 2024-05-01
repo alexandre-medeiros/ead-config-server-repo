@@ -67,7 +67,3 @@ management:
     web:
       exposure:
         include: "*"
-
-authuser:
-  refreshscope:
-    name: "Name UPDATED"
