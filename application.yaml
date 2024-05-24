@@ -18,7 +18,12 @@ eureka:
   instance:
     hostname: localhost
 
-
+logging:
+  level:
+    com.himax: INFO
+    root: INFO
+    org.springframework.web: INFO
+    org.hibernate: INFO
 #
 # Used if you want to control the exact format of response no more fields no less fields
 #  jackson:
